@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.rticket.controlacceso.DatosActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:onClick="getNormales"
+        android:text="Obtener Tickets Normales"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="60dp"
+        android:layout_below="@+id/sectorInput"
+        android:layout_toRightOf="@+id/sectorLabel"
+        android:layout_toEndOf="@+id/sectorLabel" />
+
+    <TextView
+        android:id="@+id/labelTotalNormales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:text="Normales"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/partidoInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/labelTotalNormales"
+        android:layout_toEndOf="@+id/labelTotalNormales"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/sectorInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/partidoInput"
+        android:layout_alignStart="@+id/partidoInput"
+        android:layout_below="@+id/partidoInput"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/partidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/partidoInput"
+        android:layout_alignBottom="@+id/partidoInput"
+        android:layout_alignLeft="@+id/labelTotalNormales"
+        android:layout_alignStart="@+id/labelTotalNormales"
+        android:text="PARTIDO" />
+
+    <TextView
+        android:id="@+id/sectorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/partidoLabel"
+        android:layout_alignStart="@+id/partidoLabel"
+        android:layout_alignTop="@+id/sectorInput"
+        android:layout_marginTop="11dp"
+        android:text="SECTOR" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_centerVertical="true"
+        android:text="OBTENER TICKETS NOMINATIVOS" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBTENER LISTA NEGRA"
+        android:layout_below="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/labelTotalNormales"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <TextView
+        android:id="@+id/labelTotalNominativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelTotalNormales"
+        android:layout_alignBottom="@+id/labelTotalNormales"
+        android:layout_centerHorizontal="true"
+        android:text="Nominativas" />
+
+    <TextView
+        android:id="@+id/labelTotalListaNegra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelTotalNominativas"
+        android:layout_alignBottom="@+id/labelTotalNominativas"
+        android:layout_alignEnd="@+id/totalListaNegra"
+        android:layout_alignRight="@+id/totalListaNegra"
+        android:text="Lista Negra" />
+
+    <TextView
+        android:id="@+id/totalListaNegra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:layout_below="@+id/labelTotalListaNegra"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/totalNominativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/totalListaNegra"
+        android:layout_alignBottom="@+id/totalListaNegra"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/totalNormales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/totalNominativas"
+        android:layout_alignBottom="@+id/totalNominativas"
+        android:layout_alignRight="@+id/labelTotalNormales"
+        android:layout_alignEnd="@+id/labelTotalNormales" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/labelTotalNominativas"
+        android:layout_alignLeft="@+id/labelTotalNominativas"
+        android:layout_alignStart="@+id/labelTotalNominativas"
+        android:layout_marginBottom="14dp"
+        android:text="TOTALES" />
+
+</RelativeLayout>
